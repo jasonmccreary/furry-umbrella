@@ -1,3 +1,4 @@
 laravel new furry-umbrella
 cd furry-umbrella
 composer update
+php artisan make:model --all Post
