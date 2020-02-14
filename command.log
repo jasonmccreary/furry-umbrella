@@ -2,3 +2,5 @@ laravel new furry-umbrella
 cd furry-umbrella
 composer update
 php artisan make:model --all Post
+touch database/database.sqlite
+php artisan migrate

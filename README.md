@@ -2,7 +2,7 @@
 
 This cutely named, albeit auto-generated, repository contains the classic "build a blog" project using Laravel 6.
 
-The demo code, [command history](command.log), and following resources serve as a reference for attendees or the curious passerby.
+The complete code, [atomic commits](/commits/master), [command history](command.log), and following resources serve as a detailed reference for attendees or the curious passerby.
 
 ## Resources
 - [Laravel Install Guide](https://laravel.com/docs/6.x/installation)
