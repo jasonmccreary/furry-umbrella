@@ -4,3 +4,4 @@ composer update
 php artisan make:model --all Post
 touch database/database.sqlite
 php artisan migrate
+php artisan serve
