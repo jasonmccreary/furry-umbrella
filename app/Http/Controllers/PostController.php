@@ -38,7 +38,9 @@ class PostController extends Controller
      */
     public function store(SavePost $request)
     {
-        Post::create($request->only('title', 'author', 'content'));
+        $post = Post::create($request->only('title', 'author', 'content'));
+
+        $request->session()->flash('new-post', $post->title);
 
         return redirect()->route('post.index');
     }
