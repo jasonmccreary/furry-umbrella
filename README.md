@@ -9,6 +9,8 @@ The complete code, [atomic commits](/commits/master), [command history](command.
 - [Cruddy by Design](https://www.youtube.com/watch?v=MF0jFKvS4SI)
 - [Templating with Blade](https://laravel.com/docs/6.x/blade)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Accessing request data](https://laravel.com/docs/6.x/requests)
+- [Eloquent: Getting Started](https://laravel.com/docs/6.x/eloquent)
 
 ## Contact
 Don't hesitate to [reach out to me on Twitter](https://twitter.com/gonedark) with any questions or feedback. 
