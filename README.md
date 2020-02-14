@@ -8,6 +8,7 @@ The complete code, [atomic commits](/commits/master), [command history](command.
 - [Laravel Install Guide](https://laravel.com/docs/6.x/installation)
 - [Cruddy by Design](https://www.youtube.com/watch?v=MF0jFKvS4SI)
 - [Templating with Blade](https://laravel.com/docs/6.x/blade)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Contact
 Don't hesitate to [reach out to me on Twitter](https://twitter.com/gonedark) with any questions or feedback. 

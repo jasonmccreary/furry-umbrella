@@ -5,3 +5,6 @@ php artisan make:model --all Post
 touch database/database.sqlite
 php artisan migrate
 php artisan serve
+npm install --save-dev tailwindcss
+npm install
+npm run dev
