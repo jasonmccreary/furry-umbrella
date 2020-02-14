@@ -15,3 +15,4 @@ php artisan db:seed --class DemoPostsSeeder
 npm install --save-dev @tailwindcss/custom-forms
 npx tailwindcss init
 npm run dev
+php artisan make:request SavePost

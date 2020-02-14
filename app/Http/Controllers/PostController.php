@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SavePost;
 use App\Post;
 use Illuminate\Http\Request;
 
@@ -32,12 +33,12 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param SavePost $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SavePost $request)
     {
-        Post::create($request->all());
+        Post::create($request->only('title', 'author', 'content'));
 
         return redirect()->route('post.index');
     }
