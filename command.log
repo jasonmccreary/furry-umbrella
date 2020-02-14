@@ -1,0 +1,3 @@
+laravel new furry-umbrella
+cd furry-umbrella
+composer update
