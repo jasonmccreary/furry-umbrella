@@ -19,7 +19,7 @@
               <tr class="{{ $loop->odd ? 'bg-white' : 'bg-gray-100' }}">
                   <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">{{ $post->id }}</td>
                   <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">{{ $post->title }}</td>
-                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">Jason McCreary</td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">{{ $post->author }}</td>
                   <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                     <a href="{{ route('post.edit', $post) }}" class="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline">Edit</a>
                   </td>

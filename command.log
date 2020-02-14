@@ -9,3 +9,6 @@ npm install --save-dev tailwindcss
 npm install
 npm run dev
 php artisan db:seed --class DemoPostsSeeder
+php artisan make:migration AddAuthorToPostsTable
+php artisan migrate
+php artisan db:seed --class DemoPostsSeeder
