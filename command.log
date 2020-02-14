@@ -12,3 +12,6 @@ php artisan db:seed --class DemoPostsSeeder
 php artisan make:migration AddAuthorToPostsTable
 php artisan migrate
 php artisan db:seed --class DemoPostsSeeder
+npm install --save-dev @tailwindcss/custom-forms
+npx tailwindcss init
+npm run dev
