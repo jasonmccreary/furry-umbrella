@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SavePost;
 use App\Post;
-use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -76,9 +75,16 @@ class PostController extends Controller
      * @param \App\Post $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(SavePost $request, Post $post)
     {
-        dd($request->all());
+        $post->title = $request->input('title');
+        $post->author = $request->input('author');
+        $post->content = $request->input('content');
+        $post->save();
+
+        return redirect()
+            ->route('post.index')
+            ->with('save-post', $post->title);
     }
 
     /**

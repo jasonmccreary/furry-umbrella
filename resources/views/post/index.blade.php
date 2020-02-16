@@ -5,7 +5,14 @@
     @if (session()->has('new-post'))
         <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 my-6" role="alert">
           <p class="font-bold">Woohoo!</p>
-          <p class="text-sm">You published a new post title "{{ session('new-post') }}".</p>
+          <p class="text-sm">You published a new post titled "{{ session('new-post') }}".</p>
+        </div>
+    @endif
+
+    @if (session()->has('save-post'))
+        <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 my-6" role="alert">
+          <p class="font-bold">Done!</p>
+          <p class="text-sm">You edited "{{ session('save-post') }}".</p>
         </div>
     @endif
 
