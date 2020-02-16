@@ -16,6 +16,13 @@
         </div>
     @endif
 
+    @if (session()->has('delete-post'))
+        <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 my-6" role="alert">
+          <p class="font-bold">Bye bye!</p>
+          <p class="text-sm">You deleted "{{ session('delete-post') }}".</p>
+        </div>
+    @endif
+
     <a href="{{ route('post.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Create new post</a>
     <div class="flex flex-col mt-6">
     <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
@@ -37,6 +44,12 @@
                   <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">{{ $post->author }}</td>
                   <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                     <a href="{{ route('post.edit', $post) }}" class="text-blue-600 hover:text-blue-900 focus:outline-none focus:underline">Edit</a>
+
+                      <form method="POST" action="{{ route('post.destroy', $post) }}" class="inline-block border-l-2 ml-2 pl-2">
+                          @method('DELETE')
+                          @csrf
+                          <button type="submit" class="text-red-600 hover:text-red-900 focus:outline-none focus:underline">Delete</button>
+                      </form>
                   </td>
               </tr>
           @endforeach
