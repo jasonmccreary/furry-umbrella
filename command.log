@@ -16,3 +16,5 @@ npm install --save-dev @tailwindcss/custom-forms
 npx tailwindcss init
 npm run dev
 php artisan make:request SavePost
+composer require laravel/ui
+php artisan ui bootstrap --auth
