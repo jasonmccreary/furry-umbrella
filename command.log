@@ -18,3 +18,4 @@ npm run dev
 php artisan make:request SavePost
 composer require laravel/ui
 php artisan ui bootstrap --auth
+php artisan db:seed --class=UserDemoSeeder
