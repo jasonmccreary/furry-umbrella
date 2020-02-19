@@ -43,8 +43,9 @@
                   <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">{{ $post->title }}</td>
                   <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">{{ $post->author }}</td>
                   <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                    <a href="{{ route('article.show', $post) }}" class="text-blue-600 hover:text-blue-900 focus:outline-none focus:underline">View</a>
                     @can('manage-post', $post)
-                    <a href="{{ route('post.edit', $post) }}" class="text-blue-600 hover:text-blue-900 focus:outline-none focus:underline">Edit</a>
+                    <a href="{{ route('post.edit', $post) }}" class="border-l-2 ml-2 pl-2 text-blue-600 hover:text-blue-900 focus:outline-none focus:underline">Edit</a>
 
                       <form method="POST" action="{{ route('post.destroy', $post) }}" class="inline-block border-l-2 ml-2 pl-2">
                           @method('DELETE')

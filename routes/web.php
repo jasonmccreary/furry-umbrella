@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+Route::get('/articles/{post}', 'HomeController@show')->name('article.show');
 
 Route::resource('post', 'PostController')->middleware('auth');
 
