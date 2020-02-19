@@ -63,6 +63,8 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $this->authorize('manage-post', $post);
+
         return view('post.edit', [
             'post' => $post
         ]);
@@ -77,6 +79,8 @@ class PostController extends Controller
      */
     public function update(SavePost $request, Post $post)
     {
+        $this->authorize('manage-post', $post);
+
         $post->title = $request->input('title');
         $post->author = $request->input('author');
         $post->content = $request->input('content');
@@ -95,6 +99,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        $this->authorize('manage-post', $post);
+
         $post->delete();
 
         return redirect()->route('post.index')->with('delete-post', $post->title);
