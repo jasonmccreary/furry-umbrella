@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The Fuzzy Umbrella - A blog built with Laravel 6</title>
-  <meta name="description" content="The Fuzzy Umbrella - A blog built with Laravel 6">
+  <title>The Furry Umbrella - A blog built with Laravel 6</title>
+  <meta name="description" content="The Furry Umbrella - A blog built with Laravel 6">
   <meta name="author" content="Jason McCreary">
 
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -18,7 +18,7 @@
             <button class="text-gray-700 font-semibold uppercase text-sm" type="submit">Logout</button>
         </form>
     @endauth
-    <h1 class="pt-24 mb-12 font-semibold text-4xl text-gray-900"><span class="border-b-2 border-gray-600">The <span class="italic">Fuzzy</span> Umbrella</span> ☂️</h1>
+    <h1 class="pt-24 mb-12 font-semibold text-4xl text-gray-900"><span class="border-b-2 border-gray-600">The <span class="italic">Furry</span> Umbrella</span> ☂️</h1>
     <main>
         @yield('content')
     </main>
