@@ -19,3 +19,7 @@ php artisan make:request SavePost
 composer require laravel/ui
 php artisan ui bootstrap --auth
 php artisan db:seed --class=UserDemoSeeder
+php artisan make:migration AddRoleToUsersTable
+php artisan migrate:fresh
+php artisan db:seed --class DemoPostsSeeder
+php artisan db:seed --class UserDemoSeeder

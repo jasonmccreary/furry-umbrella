@@ -13,7 +13,13 @@ class UserDemoSeeder extends Seeder
     public function run()
     {
         factory(User::class)->create([
-            'email' => 'jason@pureconcepts.net'
+            'email' => 'jason@pureconcepts.net',
+            'administrator' => true
+        ]);
+
+        factory(User::class)->create([
+            'email' => 'user@furryumbrella.com',
+            'administrator' => false
         ]);
     }
 }
