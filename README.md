@@ -12,6 +12,9 @@ The complete code, [atomic commits](/commits/master), [command history](command.
 - [Accessing request data](https://laravel.com/docs/6.x/requests)
 - [Eloquent: Getting Started](https://laravel.com/docs/6.x/eloquent)
 - [Request Validation](https://laravel.com/docs/6.x/validation)
+- [Laravel Debug Bar](https://github.com/barryvdh/laravel-debugbar)
+- [Laracasts](https://laracasts.com/)
+- [Laravel News](https://laravel-news.com/)
 
 ## Contact
 Don't hesitate to [reach out to me on Twitter](https://twitter.com/gonedark) with any questions or feedback. 
